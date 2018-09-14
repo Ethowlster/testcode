@@ -21,7 +21,7 @@ namespace sideproject
             play(name,repeat);
         }
             
-       public static void play(string name2,string repeat2)
+        public static void play(string name2,string repeat2)
         {
            Random rnd = new Random();
            int wait = rnd.Next(1000,10000);
@@ -47,7 +47,8 @@ namespace sideproject
            string reflex = Console.ReadLine();
 
            stopwatch.Stop();
-           double result = Convert.ToDouble(stopwatch.Elapsed.TotalSeconds);
+           double result = Math.Round(Convert.ToDouble(stopwatch.Elapsed.TotalSeconds), 3);
+           string result2 = Convert.ToString(result);
            Console.WriteLine("");
            Console.WriteLine("");
            Console.WriteLine($"your time was ............... {result}");
@@ -57,14 +58,14 @@ namespace sideproject
                Console.WriteLine("");
                Console.WriteLine($"Excellent reflexes {name2}");
                Console.WriteLine("");
-           }
-           else if (result <= 0.3){
+            }
+            else if (result <= 0.3){
                Console.WriteLine("");
                Console.WriteLine("");
                Console.WriteLine($"your reflexes are good {name2}");
                Console.WriteLine("");
-           }
-           else if (result <= 0.35){
+            }
+            else if (result <= 0.35){
                Console.WriteLine("");
                Console.WriteLine("");
                Console.WriteLine($"your reflexes are about average {name2}");
@@ -75,7 +76,7 @@ namespace sideproject
                Console.WriteLine("");
                Console.WriteLine($"{name2}, that was a little disappointing. you should probably try again.");
                Console.WriteLine("");
-           }
+            }
 
            Console.WriteLine("What would you like to do now?");
            Console.WriteLine("");
@@ -91,7 +92,7 @@ namespace sideproject
             }
             else if (answer == "2") {
                 repeat2 = "y";
-                HallOfFame(name2,repeat2);
+                HallOfFame(name2,repeat2,result2);
             }
             else {
                 Console.WriteLine("");
@@ -105,29 +106,57 @@ namespace sideproject
                 Thread.Sleep(wait);
             }
         
-        public static void HallOfFame (string name2,string repeat2)
+        public static void HallOfFame (string name2,string repeat2, string result2)
         {
         string repeat = repeat2;
         string name = name2;
-        var webRequest = WebRequest.Create(@"https://trulivecampaign.blob.core.windows.net/public/leaderboard.txt");
+        string result3 = result2;
+        string[,] leaderboard = new string[10,3];
+            
+            var webRequest = WebRequest.Create(@"https://trulivecampaign.blob.core.windows.net/public/leaderboard.txt");
 
-        using(var response = webRequest.GetResponse())
-        using(var content = response.GetResponseStream())
-        using(var reader = new StreamReader(content))
-        {
-            var leaderboard = reader.ReadToEnd();
-            Console.WriteLine("");
-            System.Console.WriteLine("REACTIONS HALL OF FAME");
-            System.Console.WriteLine($"{leaderboard}");
-            Console.WriteLine("");
-        }
+            using(var response = webRequest.GetResponse())
+            using(var content = response.GetResponseStream())
+            {
+            
+                char[] delimiters = new char[] { ',' };
+                int num = 0;
 
-           Console.WriteLine("What would you like to do now?");
-           Console.WriteLine("");
-           Console.WriteLine("1 - Play again");
-           Console.WriteLine("2 - See the leaderboard (again)");
-           Console.WriteLine("3 - I'm done, get me out of here");
-           Console.WriteLine("Choose your option 1,2 or 3...");
+                using (StreamReader reader = new StreamReader(content))
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    Console.WriteLine(@"..//**REACTIONS HALL OF FAME**\\..");
+                    Console.WriteLine("");
+                    while (true)
+                    {
+                        string line = reader.ReadLine();
+                        if (line == null)
+                        {
+                            break;
+                        }
+                        string[] parts = line.Split(delimiters);
+                        leaderboard[num,0] = parts[0];
+                        leaderboard[num,1] = parts[1];
+                        leaderboard[num,2] = parts[2];
+                        num++;
+                        
+                        Console.WriteLine("      {0} --> {1} --> {2}", parts);
+                    }
+                }
+
+            }
+
+            leaderboard[0,1]=name2;
+            leaderboard[0,2]=result2;
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("What would you like to do now?");
+            Console.WriteLine("");
+            Console.WriteLine("1 - Play again");
+            Console.WriteLine("2 - See the leaderboard (again)");
+            Console.WriteLine("3 - I'm done, get me out of here");
+            Console.WriteLine("Choose your option 1,2 or 3...");
            string answer = Console.ReadLine();
 
            if (answer == "1"){
@@ -136,7 +165,7 @@ namespace sideproject
             }
             else if (answer == "2") {
                 repeat2 = "y";
-                HallOfFame(name2,repeat2);
+                HallOfFame(name2,repeat2,result3);
             }
             else {
                 Console.WriteLine("");
@@ -144,5 +173,5 @@ namespace sideproject
                 Console.WriteLine("Bye for now!");
            }
         }
-   }
+    }
 }
