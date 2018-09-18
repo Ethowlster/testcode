@@ -2,35 +2,34 @@
 
 namespace testcode {
  class Program {
-  static void Main(string[] args) {
+  static void Main (string[] args) {
    string name;
    int birthyear;
 
    Console.WriteLine("What year were you born?: ");
-
    birthyear = Convert.ToInt32(Console.ReadLine());
    Console.WriteLine("");
 
-   int gretchenstrength = 0;
-   int gretchenspeed = 0;
-   int gretchenagility = 0;
-   bool isaskeda = false;
-   bool isaskedb = false;
-   bool isaskedc = false;
+    int gretchenstrength = 0;
+    int gretchenspeed = 0;
+    int gretchenagility = 0;
+    bool isaskeda = false;
+    bool isaskedb = false;
+    bool isaskedc = false;
 
-   Console.WriteLine("~Meeting the Monster~");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("You wake up in a dark alley, your head lolls onto your shoulder and you hear a loud crack.");
-   Console.WriteLine("There is a low humming sound coming from a dustbin nearby. Do you investigate?");
-   Console.WriteLine("");
-   string investigate = Console.ReadLine();
-   Console.WriteLine("");
+    Console.WriteLine("~Meeting the Monster~");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("You wake up in a dark alley, your head lolls onto your shoulder and you hear a loud crack.");
+    Console.WriteLine("There is a low humming sound coming from a dustbin nearby. Do you investigate?");
+    Console.WriteLine("");
+    string investigate = Console.ReadLine();
+    Console.WriteLine("");
    if (investigate == "yes") {
     Console.WriteLine("as you lift your body off the grimey floor you can feel your muscles screaming in pain.");
     Console.WriteLine("When you reach the bin you lift the lid off warily....");
@@ -43,26 +42,31 @@ namespace testcode {
     Console.WriteLine("");
     Console.WriteLine("You close your eyes for a second, when you here a loud bang behind you.");
    }
-   Console.WriteLine("Your head whips around in the direction from where the sound came");
-   Console.WriteLine("");
-   Console.WriteLine("BOO");
-   Console.WriteLine("");
-   Console.WriteLine("");
-   Console.WriteLine("you are astounded as a red cloud with glowing yellow eyes appears to be floating in front of you.");
-   Console.WriteLine("");
-   Console.WriteLine("hello my name is gretchen.");
-   Console.WriteLine("Please let me know your name, it asks politely ");
-   name = Console.ReadLine();
-   char question;
-   Console.WriteLine("");
-   Console.WriteLine($"Nice to meet you {name}");
-   Console.WriteLine("");
-   Console.WriteLine("You have so many questions but don't know where to start.");
-   Console.WriteLine("A. What are you?");
-   Console.WriteLine("B. How'd you get here?");
-   Console.WriteLine("C. Do you have powers?");
-   Console.WriteLine("What do you ask?");
-   question = Convert.ToChar(Console.ReadLine());
+    Console.WriteLine("Your head whips around in the direction from where the sound came");
+    Console.WriteLine("");
+    Console.WriteLine(@" .-.");
+    Console.WriteLine(@"(o o)");
+    Console.WriteLine(@"| O \");
+    Console.WriteLine(@" \   \");
+    Console.WriteLine(@"  `~~~'");
+    Console.WriteLine("BOO");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("you are astounded as a red cloud with glowing yellow eyes appears to be floating in front of you.");
+    Console.WriteLine("");
+    Console.WriteLine("hello my name is gretchen.");
+    Console.WriteLine("Please let me know your name, it asks politely ");
+    name = Console.ReadLine();
+    char question;
+    Console.WriteLine("");
+    Console.WriteLine($"Nice to meet you {name}");
+    Console.WriteLine("");
+    Console.WriteLine("You have so many questions but don't know where to start.");
+    Console.WriteLine("A. What are you?");
+    Console.WriteLine("B. How'd you get here?");
+    Console.WriteLine("C. Do you have powers?");
+    Console.WriteLine("What do you ask?");
+    question = Convert.ToChar(Console.ReadLine());
 
    string answer1;
            switch (Char.ToLower(question)) {

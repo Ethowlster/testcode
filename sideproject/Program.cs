@@ -98,6 +98,19 @@ namespace sideproject
                 Console.WriteLine("");
                 Console.WriteLine($"Thanks for playing {name2}!");
                 Console.WriteLine("Bye for now!");
+                Console.WriteLine(@"          _");
+                Console.WriteLine(@"        _| |");
+                Console.WriteLine(@"      _| | |");
+                Console.WriteLine(@"     | | | |");
+                Console.WriteLine(@"     | | | | __");
+                Console.WriteLine(@"     | | | |/  \");
+                Console.WriteLine(@"     |       /\ \");
+                Console.WriteLine(@"     |      /  \/");
+                Console.WriteLine(@"     |      \  /\");
+                Console.WriteLine(@"     |       \/ /");
+                Console.WriteLine(@"      \        /");
+                Console.WriteLine(@"       |     /");
+                Console.WriteLine(@"       |    |");
            }
         }
             
@@ -171,6 +184,19 @@ namespace sideproject
                 Console.WriteLine("");
                 Console.WriteLine($"Thanks for playing {name2}!");
                 Console.WriteLine("Bye for now!");
+                Console.WriteLine(@"     _");
+                Console.WriteLine(@"   _| |");
+                Console.WriteLine(@" _| | |");
+                Console.WriteLine(@"| | | |");
+                Console.WriteLine(@"| | | | __");
+                Console.WriteLine(@"| | | |/  \");
+                Console.WriteLine(@"|       /\ \");
+                Console.WriteLine(@"|      /  \/");
+                Console.WriteLine(@"|      \  /\");
+                Console.WriteLine(@"|       \/ /");
+                Console.WriteLine(@"\        /");
+                Console.WriteLine(@" |     /");
+                Console.WriteLine(@" |    |");
            }
         }
     }

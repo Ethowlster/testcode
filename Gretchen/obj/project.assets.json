@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\testcode\\testcode.csproj",
+      "projectUniqueName": "C:\\testcode\\Gretchen\\testcode.csproj",
       "projectName": "testcode",
-      "projectPath": "C:\\testcode\\testcode.csproj",
+      "projectPath": "C:\\testcode\\Gretchen\\testcode.csproj",
       "packagesPath": "C:\\Users\\Ethan Turner\\.nuget\\packages\\",
-      "outputPath": "C:\\testcode\\obj\\",
+      "outputPath": "C:\\testcode\\Gretchen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

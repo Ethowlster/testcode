@@ -1,0 +1,13 @@
+C:\testcode\obj\Debug\netcoreapp2.1\testcode.csprojAssemblyReference.cache
+C:\testcode\obj\Debug\netcoreapp2.1\testcode.csproj.CoreCompileInputs.cache
+C:\testcode\obj\Debug\netcoreapp2.1\testcode.AssemblyInfoInputs.cache
+C:\testcode\obj\Debug\netcoreapp2.1\testcode.AssemblyInfo.cs
+C:\testcode\Gretchen\bin\Debug\netcoreapp2.1\testcode.deps.json
+C:\testcode\Gretchen\bin\Debug\netcoreapp2.1\testcode.runtimeconfig.json
+C:\testcode\Gretchen\bin\Debug\netcoreapp2.1\testcode.runtimeconfig.dev.json
+C:\testcode\Gretchen\bin\Debug\netcoreapp2.1\testcode.dll
+C:\testcode\Gretchen\bin\Debug\netcoreapp2.1\testcode.pdb
+C:\testcode\Gretchen\obj\Debug\netcoreapp2.1\testcode.csprojAssemblyReference.cache
+C:\testcode\Gretchen\obj\Debug\netcoreapp2.1\testcode.csproj.CoreCompileInputs.cache
+C:\testcode\Gretchen\obj\Debug\netcoreapp2.1\testcode.dll
+C:\testcode\Gretchen\obj\Debug\netcoreapp2.1\testcode.pdb
