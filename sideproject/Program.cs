@@ -109,8 +109,8 @@ namespace sideproject
                 Console.WriteLine(@"     |      \  /\");
                 Console.WriteLine(@"     |       \/ /");
                 Console.WriteLine(@"      \        /");
-                Console.WriteLine(@"       |     /");
-                Console.WriteLine(@"       |    |");
+                Console.WriteLine(@"       |      /");
+                Console.WriteLine(@"       |     |");
            }
         }
             
@@ -167,7 +167,7 @@ namespace sideproject
             Console.WriteLine("What would you like to do now?");
             Console.WriteLine("");
             Console.WriteLine("1 - Play again");
-            Console.WriteLine("2 - See the leaderboard (again)");
+            Console.WriteLine("2 - See the leaderboard (again?)");
             Console.WriteLine("3 - I'm done, get me out of here");
             Console.WriteLine("Choose your option 1,2 or 3...");
            string answer = Console.ReadLine();
@@ -194,9 +194,9 @@ namespace sideproject
                 Console.WriteLine(@"|      /  \/");
                 Console.WriteLine(@"|      \  /\");
                 Console.WriteLine(@"|       \/ /");
-                Console.WriteLine(@"\        /");
-                Console.WriteLine(@" |     /");
-                Console.WriteLine(@" |    |");
+                Console.WriteLine(@"\         /");
+                Console.WriteLine(@" |       /");
+                Console.WriteLine(@" |      |");
            }
         }
     }
