@@ -1,0 +1,10 @@
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\bin\Debug\Reflex_Game.exe.config
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\bin\Debug\Reflex_Game.exe
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\bin\Debug\Reflex_Game.pdb
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.csprojAssemblyReference.cache
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.Form1.resources
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.Properties.Resources.resources
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.csproj.GenerateResource.cache
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.csproj.CoreCompileInputs.cache
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.exe
+c:\users\ethan turner\source\repos\Reflex_Game\Reflex_Game\obj\Debug\Reflex_Game.pdb
